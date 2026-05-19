@@ -1,0 +1,123 @@
+{
+  "accountabilityAttestations": [
+    {
+      "basis": "Informal v1 accountability marker for synthetic rehearsal fixture.",
+      "ownerId": "aboimpinto-hushvoting-owner",
+      "role": "readiness_owner",
+      "samePersonTwoHat": true
+    }
+  ],
+  "ceremonyId": "DPC-REHEARSAL-20260519-001",
+  "ceremonyStages": [
+    {
+      "blocksAcceptance": true,
+      "stageId": "prepare",
+      "stageStatus": "passed"
+    },
+    {
+      "blocksAcceptance": true,
+      "stageId": "freeze",
+      "stageStatus": "passed"
+    },
+    {
+      "blocksAcceptance": true,
+      "stageId": "deploy_verify",
+      "stageStatus": "passed"
+    },
+    {
+      "blocksAcceptance": true,
+      "stageId": "pre_open",
+      "stageStatus": "passed"
+    },
+    {
+      "blocksAcceptance": true,
+      "stageId": "active_window_monitoring",
+      "stageStatus": "passed"
+    },
+    {
+      "blocksAcceptance": true,
+      "stageId": "close_finalize_export",
+      "stageStatus": "passed"
+    }
+  ],
+  "ceremonyVersion": "1.0",
+  "claimLevel": "internal_non_binding_rehearsal",
+  "componentDeploymentProofs": {
+    "hushServerNodeDeploymentProofId": "DPP-SERVER-20260519-001",
+    "hushWebClientDeploymentProofId": "DPP-WEB-20260519-001"
+  },
+  "custodyProfile": {
+    "custodyMode": "aws_kms_per_election_envelope_v1",
+    "publicSafeStatus": "accepted_by_rehearsal_binding"
+  },
+  "deploymentEnvironment": {
+    "publicSafeProfile": "hushvoting-managed-aws-container-public-safe-fixture",
+    "restrictedBoundaryRef": "REST-ENV-BOUNDARY-20260519-001"
+  },
+  "deploymentImpactClassification": {
+    "blocksAcceptedEvidence": false,
+    "classificationId": "DIC-CEREMONY-20260519-001",
+    "matchedRules": [
+      "server-deployment-no-protocol-change"
+    ],
+    "outputClass": "voting_protocol_no_change",
+    "reason": "Synthetic ceremony fixture proves accepted component proof set without voting protocol change."
+  },
+  "deploymentProfile": "hushvoting_managed_aws_container_v1",
+  "deploymentProofSet": {
+    "bindingLedgerId": "DPBL-REHEARSAL-20260519-001",
+    "proofSetId": "DPS-REHEARSAL-20260519-001"
+  },
+  "deploymentProtocolVersion": "hushvoting-deployment-protocol-v1",
+  "electionCustodyEvidenceRefs": [
+    {
+      "evidenceId": "RDY-EVID-AT-RDY-002-FEAT-131-001",
+      "publicHashRef": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "restrictedIndexRef": "REST-CUSTODY-HANDOFF-20260519-001"
+    }
+  ],
+  "environmentEvidence": {
+    "configProfileHash": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "dbMigrationState": "migration-state-feat132-fixture",
+    "packageExportDestination": "synthetic-public-fixture",
+    "runtimeHealthCheck": "passed"
+  },
+  "exceptions": [],
+  "finalPackageRefs": [
+    {
+      "packageId": "FINAL-PACKAGE-REHEARSAL-20260519-001",
+      "sha256Hash": "1212121212121212121212121212121212121212121212121212121212121212"
+    }
+  ],
+  "generatedViews": {
+    "publicSafeSummaryPath": "public-safe-binding-summary.md",
+    "restrictedEvidenceIndexPath": "restricted-deployment-evidence-index.md"
+  },
+  "publicDeploymentProofRepository": "https://github.com/Hushnetwork-social/Deployment-Proof-Packages",
+  "readinessFragment": {
+    "fragmentId": "RDY-FRAG-AT-RDY-005-FEAT-132-001"
+  },
+  "rehearsalElectionId": "HV-REHEARSAL-PUBLIC-20260519-001",
+  "releaseRefs": {
+    "backendImageDigest": "sha256:6666666666666666666666666666666666666666666666666666666666666666",
+    "packageExporterHash": "8888888888888888888888888888888888888888888888888888888888888888",
+    "protocolPackageHash": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "releaseTag": "hushvoting-feat132-fixture",
+    "sourceCommit": "cccccccccccccccccccccccccccccccccccccccc",
+    "verifierHash": "7777777777777777777777777777777777777777777777777777777777777777",
+    "webArtifactHash": "1111111111111111111111111111111111111111111111111111111111111111"
+  },
+  "rules": {
+    "emergencyChangeRule": "Emergency change requires reason, before/after refs, rerun checks, and accountability marker.",
+    "noOrdinaryChangeRule": "No voting-protocol-impacting change during the accepted window.",
+    "rollbackRule": "Rollback only to last ceremony-approved immutable artifact set.",
+    "sameElectionBugFixBoundary": "Allowed only when proven non-state-breaking."
+  },
+  "status": "accepted",
+  "verifierOutputRefs": [
+    {
+      "sha256Hash": "3434343434343434343434343434343434343434343434343434343434343434",
+      "verifierOutputId": "VERIFIER-OUTPUT-REHEARSAL-20260519-001"
+    }
+  ]
+}

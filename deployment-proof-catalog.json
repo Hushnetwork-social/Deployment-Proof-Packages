@@ -1,0 +1,46 @@
+{
+  "catalogVersion": "1.0",
+  "ceremonies": [
+    {
+      "archiveHash": "be764bb1cbf7ed78567e5e3f7db46dbac5c1c5ff75e7bec92a6e6c9fa401fe56",
+      "ceremonyId": "DPC-REHEARSAL-20260519-001",
+      "downstreamHandoffId": "DPP-HANDOFF-FEAT-132-20260519-001",
+      "manifestHash": "c35ffc08b02a921a18e6cc795d2059c36e97894c9113b0da2a35e2d2469677c3",
+      "packagePath": "ceremonies/DPC-REHEARSAL-20260519-001",
+      "readinessFragmentId": "RDY-FRAG-AT-RDY-005-FEAT-132-001",
+      "rehearsalElectionId": "HV-REHEARSAL-PUBLIC-20260519-001"
+    }
+  ],
+  "componentProofs": [
+    {
+      "archiveHash": "aade1de710268e6b994ebdcff57937b5ce0b85d021122a88c92875546b9f061b",
+      "componentId": "hush-web-client",
+      "deploymentProofId": "DPP-WEB-20260519-001",
+      "manifestHash": "38014a4e48f3c60f29adb52a470bc25d0cb41692b867d26e780b398876f1963b",
+      "packagePath": "packages/hush-web-client/DPP-WEB-20260519-001",
+      "status": "accepted"
+    },
+    {
+      "archiveHash": "e5ab8504dc0510ad4ffccf67a73d85c0106e425f1bf7adb58f7d6542a11d9f8b",
+      "componentId": "hush-server-node",
+      "deploymentProofId": "DPP-SERVER-20260519-001",
+      "manifestHash": "cd31dd485b2c5819ada4bbace9de8d257fb5a6969b58a7b353b09e84dd72a02c",
+      "packagePath": "packages/hush-server-node/DPP-SERVER-20260519-001",
+      "status": "accepted"
+    }
+  ],
+  "generatedAt": "2026-05-19T00:00:00.0000000Z",
+  "latestAcceptedByComponentAndTarget": {},
+  "proofSets": [
+    {
+      "archiveHash": "08994d7cfa164d59d1310bd15959b1d45624bdbb92e463eca82ca688fcfd3e92",
+      "electionOrRehearsalPublicId": "HV-REHEARSAL-PUBLIC-20260519-001",
+      "ledgerId": "DPBL-REHEARSAL-20260519-001",
+      "manifestHash": "ba5c657aba81297b8ad250e8645a5903647025bf405e61feddb7c49e1b70035a",
+      "packagePath": "election-bindings/HV-REHEARSAL-PUBLIC-20260519-001/DPBL-REHEARSAL-20260519-001",
+      "proofSetId": "DPS-REHEARSAL-20260519-001"
+    }
+  ],
+  "publicRepository": "https://github.com/Hushnetwork-social/Deployment-Proof-Packages",
+  "supersededProofs": []
+}

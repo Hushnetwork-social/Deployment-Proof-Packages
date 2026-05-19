@@ -1,0 +1,111 @@
+{
+  "acceptanceGate": "AT-RDY-005",
+  "custodyHandoffConsumption": {
+    "acceptedBindingRequirement": "accepted_rehearsal_or_election_binding_requires_live_aws_kms_custody_evidence_when_the_profile_requires_it",
+    "consumerSource": "FEAT-131",
+    "custodyMode": "aws_kms_per_election_envelope_v1",
+    "fakeDevCustodyPolicy": "tests_and_dry_runs_only",
+    "publicComponentProofCustodyScope": "custody_profile_status_only",
+    "publicSafeCustodyRefs": [
+      {
+        "evidenceId": "RDY-EVID-AT-RDY-002-FEAT-131-001",
+        "publicHashRef": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "restrictedIndexRef": "REST-CUSTODY-HANDOFF-20260519-001"
+      }
+    ],
+    "restrictedOnlyEvidence": [
+      "provider_environment_refs",
+      "restricted_custody_row_refs",
+      "disposable_kms_cleanup_safety_refs",
+      "operator_reviewer_role_refs"
+    ]
+  },
+  "generatedAt": "2026-05-19T12:00:00Z",
+  "handoffId": "DPP-HANDOFF-FEAT-132-20260519-001",
+  "operationalEvidenceHandoff": {
+    "bindingLedgerId": "DPBL-REHEARSAL-20260519-001",
+    "catalogRef": {
+      "commit": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "path": "deployment-proof-catalog.json",
+      "repository": "https://github.com/Hushnetwork-social/Deployment-Proof-Packages"
+    },
+    "consumerFeature": "FEAT-133",
+    "hushServerNodeProof": {
+      "deploymentProofId": "DPP-SERVER-20260519-001",
+      "packageHash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    },
+    "opsChecksCanConsumeWithoutRawProviderData": true,
+    "proofSetId": "DPS-REHEARSAL-20260519-001",
+    "restrictedEvidenceRefs": [
+      {
+        "refId": "REST-DEPLOY-WEB-20260519-001",
+        "sha256Hash": "4444444444444444444444444444444444444444444444444444444444444444"
+      },
+      {
+        "refId": "REST-DEPLOY-SERVER-20260519-001",
+        "sha256Hash": "9999999999999999999999999999999999999999999999999999999999999999"
+      }
+    ],
+    "webClientProof": {
+      "deploymentProofId": "DPP-WEB-20260519-001",
+      "packageHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    }
+  },
+  "pilotRehearsalHandoff": {
+    "claimWordingImpact": "internal_non_binding_rehearsal_and_controlled_pilot_preparation_only",
+    "consumerFeature": "FEAT-141",
+    "exceptionStatus": "none_open",
+    "publicPackageDoesNotRequireRawCustodyOrProviderData": true,
+    "publicRefs": [
+      "packages/hush-web-client/DPP-WEB-20260519-001/",
+      "packages/hush-server-node/DPP-SERVER-20260519-001/",
+      "election-bindings/HV-REHEARSAL-PUBLIC-20260519-001/DPBL-REHEARSAL-20260519-001/"
+    ],
+    "residualRisk": "Limited operating history and deployment variance remain after v1 evidence.",
+    "restrictedRefs": [
+      "Deployment-Ceremonies/DPC-REHEARSAL-20260519-001/restricted-ceremony-evidence-index.md",
+      "Deployment-Ceremonies/DPC-REHEARSAL-20260519-001/restricted-deployment-evidence-index.md"
+    ]
+  },
+  "readinessRegisterHandoff": {
+    "claimEffect": "Eligible to support internal non-binding rehearsal and controlled pilot preparation when other EPIC-015 blocker gates are accepted.",
+    "consumerFeature": "FEAT-130",
+    "dimensionScoreChange": {
+      "acceptedScore": 8,
+      "dimensionId": "RDY-DIM-006",
+      "previousScore": 4,
+      "requiresAcceptedEvidence": true
+    },
+    "readinessFragmentId": "RDY-FRAG-AT-RDY-005-FEAT-132-001",
+    "residualRisk": "Limited operating history and deployment variance remain after v1 evidence.",
+    "resolvedBlockers": [
+      "RDY-BLOCK-FRIENDLY_ORGANIZATION_PILOT-002"
+    ]
+  },
+  "runtimeVisibilityContract": {
+    "downstreamFeatureNeeded": true,
+    "eventModelFields": [
+      "eventId",
+      "timestamp",
+      "lifecycleCheckpoint",
+      "classification",
+      "reason",
+      "beforeRefs",
+      "afterRefs",
+      "checksRerun",
+      "accountabilityMarker"
+    ],
+    "implementedInFeat132": false,
+    "productionRuntimeUiScope": "not_implemented_by_FEAT-132",
+    "reconciliationCheckpoints": [
+      "Draft -\u003E Open",
+      "Open -\u003E Close",
+      "Close -\u003E Finalize",
+      "Open -\u003E Void",
+      "Close -\u003E Void",
+      "final_package_export"
+    ]
+  },
+  "sourceFeature": "FEAT-132",
+  "sourceGap": "Trusted deployment ceremony"
+}

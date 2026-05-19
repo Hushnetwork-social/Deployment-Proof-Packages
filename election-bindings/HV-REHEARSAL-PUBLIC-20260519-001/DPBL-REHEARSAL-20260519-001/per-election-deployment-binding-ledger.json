@@ -1,0 +1,52 @@
+{
+  "activePlatformCeremonyId": "DPC-REHEARSAL-20260519-001",
+  "activeProofSetAtOpen": {
+    "hushServerNodeDeploymentProofId": "DPP-SERVER-20260519-001",
+    "hushWebClientDeploymentProofId": "DPP-WEB-20260519-001",
+    "proofSetId": "DPS-REHEARSAL-20260519-001"
+  },
+  "catalogReconciliation": {
+    "catalogCommit": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "checkpointsCovered": [
+      "Draft -\u003E Open",
+      "Open -\u003E Close",
+      "Close -\u003E Finalize",
+      "Open -\u003E Void",
+      "Close -\u003E Void",
+      "final_package_export"
+    ],
+    "reconciledAt": "2026-05-19T10:30:00Z"
+  },
+  "deploymentEvents": [
+    {
+      "accountabilityMarker": "aboimpinto-hushvoting-owner",
+      "checksRerun": [
+        "runtime-verification",
+        "public-redaction-scan"
+      ],
+      "classification": "voting_protocol_no_change",
+      "deploymentRunId": "gh-run-server-20260519-001",
+      "eventId": "DPE-OPEN-20260519-001",
+      "eventType": "lifecycle_checkpoint",
+      "lifecycleCheckpoint": "Draft -\u003E Open",
+      "reason": "Synthetic open checkpoint binds accepted component proof set.",
+      "result": "accepted"
+    }
+  ],
+  "deploymentProtocolVersion": "hushvoting-deployment-protocol-v1",
+  "electionOrRehearsalId": "HV-REHEARSAL-PUBLIC-20260519-001",
+  "finalBindingSummary": "Synthetic rehearsal binding ledger records the active proof set and lifecycle checkpoint.",
+  "generatedAt": "2026-05-19T10:30:00Z",
+  "ledgerId": "DPBL-REHEARSAL-20260519-001",
+  "lifecycleStateWindow": {
+    "closedAt": null,
+    "finalizedAt": null,
+    "fromState": "Draft",
+    "openedAt": "2026-05-19T10:35:00Z",
+    "toState": "Open"
+  },
+  "schemaVersion": "1.0",
+  "status": "accepted",
+  "unknownClassificationPolicy": "unknown_pending_classification blocks accepted ceremony evidence for affected open elections",
+  "visibility": "public"
+}

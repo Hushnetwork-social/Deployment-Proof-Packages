@@ -1,0 +1,66 @@
+{
+  "accountabilityAttestations": [
+    {
+      "basis": "Informal v1 accountability marker for synthetic fixture.",
+      "ownerId": "aboimpinto-hushvoting-owner",
+      "role": "component_owner",
+      "samePersonTwoHat": true
+    }
+  ],
+  "artifactRefs": {
+    "backendImageDigest": "sha256:6666666666666666666666666666666666666666666666666666666666666666",
+    "dbMigrationState": "migration-state-feat132-fixture",
+    "packageExporterHash": "8888888888888888888888888888888888888888888888888888888888888888",
+    "serverReleaseRef": "server-release-feat132-fixture",
+    "verifierHash": "7777777777777777777777777777777777777777777777777777777777777777"
+  },
+  "cdProvider": "github_actions",
+  "cdRunId": "gh-run-server-20260519-001",
+  "componentId": "hush-server-node",
+  "componentVersion": "v0.1.0-feat132-fixture",
+  "custodyProfile": {
+    "publicSafeStatus": "custody_profile_available_by_election_binding_only"
+  },
+  "deployedAt": "2026-05-19T10:10:00Z",
+  "deploymentExecutionKind": "cd_deployment",
+  "deploymentImpactClassification": {
+    "blocksAcceptedEvidence": false,
+    "classificationId": "DIC-SERVER-20260519-001",
+    "matchedRules": [
+      "server-artifact-refs-unchanged"
+    ],
+    "outputClass": "voting_protocol_no_change",
+    "reason": "Synthetic fixture proves runtime deployment while protocol package, verifier, exporter, custody, database, and final package schemas stayed unchanged."
+  },
+  "deploymentProofId": "DPP-SERVER-20260519-001",
+  "deploymentTarget": "hushvoting-managed-aws-container-public-safe-fixture",
+  "generatedViews": {
+    "publicSafeSummaryHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "publicSafeSummaryPath": "public-safe-deployment-summary.md"
+  },
+  "previousProofId": null,
+  "publicRepositoryRef": {
+    "commit": "dddddddddddddddddddddddddddddddddddddddd",
+    "path": "packages/hush-server-node/DPP-SERVER-20260519-001/",
+    "repository": "https://github.com/Hushnetwork-social/Deployment-Proof-Packages"
+  },
+  "restrictedEvidenceRefs": [
+    {
+      "refId": "REST-DEPLOY-SERVER-20260519-001",
+      "sha256Hash": "9999999999999999999999999999999999999999999999999999999999999999"
+    }
+  ],
+  "runtimeVerification": {
+    "checkedAt": "2026-05-19T10:15:00Z",
+    "observedBackendImageDigest": "sha256:6666666666666666666666666666666666666666666666666666666666666666",
+    "status": "passed"
+  },
+  "sourceRef": {
+    "immutable": true,
+    "refType": "commit",
+    "repository": "https://github.com/Hushnetwork-social/hush-server-node",
+    "value": "cccccccccccccccccccccccccccccccccccccccc"
+  },
+  "status": "accepted",
+  "supersedesProofIds": []
+}
