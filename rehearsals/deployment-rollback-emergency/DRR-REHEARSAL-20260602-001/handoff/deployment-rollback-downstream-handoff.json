@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "deployment-rollback-downstream-handoff.v1",
+  "generatedAt": "2026-06-02T00:00:00Z",
+  "producerFeature": "FEAT-162",
+  "sourceId": "DEPLOYMENT-ROLLBACK-REHEARSAL-v0.1.0",
+  "consumers": [
+    {
+      "consumerId": "FEAT-163",
+      "role": "second production-like run consumes deployment rollback context"
+    },
+    {
+      "consumerId": "FEAT-166",
+      "role": "governance handoff audit pack consumes reviewer evidence"
+    }
+  ],
+  "publicPackageRoot": "rehearsals/deployment-rollback-emergency/DRR-REHEARSAL-20260602-001",
+  "readinessFragmentRef": "readiness/deployment-rollback-readiness-fragment.json",
+  "scoreProposalRef": "readiness/deployment-rollback-score-proposal.json",
+  "restrictedIndexRef": "restricted/restricted-evidence-index.schema-note.md",
+  "runtimeBindingClassification": "no_new_runtime_binding_required_by_default",
+  "directRegisterMutation": false
+}

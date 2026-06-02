@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "deployment-rollback-webclient-observed-proof-summary.v1",
+  "generatedAt": "2026-06-02T00:00:00Z",
+  "status": "pass",
+  "evidenceMode": "deterministic_rehearsal_fixture",
+  "scenarioCount": 1,
+  "cases": [
+    {
+      "scenarioId": "DEPLOY-ROLLBACK-WEBCLIENT-OBSERVED-PROOF",
+      "category": "webclient_observed_proof",
+      "expectedResult": "degraded",
+      "safeResultCodes": [
+        "webclient_observed_proof_limitation_preserved"
+      ],
+      "readinessImpact": "records_residual_risk",
+      "gateIds": [
+        "AT-RDY-018"
+      ],
+      "proofRefs": [
+        "FEAT-144-observed-webclient-proof-handshake"
+      ],
+      "restrictedEvidenceRefs": [],
+      "requiredForScore": true
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "schemaVersion": "deployment-rollback-rehearsal-package-manifest.v1",
+  "packageId": "deployment-rollback-emergency-rehearsal",
+  "packageVersion": "v0.1.0",
+  "producerFeature": "FEAT-162",
+  "sourceId": "DEPLOYMENT-ROLLBACK-REHEARSAL-v0.1.0",
+  "generatedAt": "2026-06-02T00:00:00Z",
+  "baselineRegister": {
+    "registerVersionId": "RDY-REG-v0.1.7",
+    "status": "AcceptedInternal",
+    "dimensionId": "RDY-DIM-006",
+    "proposedScoreFrom": 8,
+    "proposedScoreTo": 9,
+    "targetBlockerId": "RDY-BLOCK-INTERNAL_AUDIT_95_DIM006-001",
+    "doesNotMutateRegister": true
+  },
+  "upstreamRefs": [
+    {
+      "key": "feat132",
+      "value": {
+        "producerFeature": "FEAT-132",
+        "evidenceId": "RDY-EVID-AT-RDY-005-FEAT-132-001",
+        "dimensionId": "RDY-DIM-006",
+        "publicRepository": "https://github.com/Hushnetwork-social/Deployment-Proof-Packages",
+        "publicBranch": "main",
+        "publicCommit": "5ec9f5ee2418ddc5f72e5953089ac158d13105db",
+        "ceremonyId": "DPC-REHEARSAL-20260519-001",
+        "webClientProofId": "DPP-WEB-20260519-001",
+        "serverProofId": "DPP-SERVER-20260519-001",
+        "proofSetId": "DPS-REHEARSAL-20260519-001",
+        "ledgerId": "DPBL-REHEARSAL-20260519-001",
+        "readinessFragmentHash": "98529aa18670372511f28750515e2837e6384403e1e03e690f64ae527b1272a6"
+      }
+    },
+    {
+      "key": "feat143",
+      "value": {
+        "producerFeature": "FEAT-143",
+        "status": "accepted_with_limitations",
+        "role": "server runtime deployment proof binding ledger",
+        "referenceHash": "2f212db050ac1cb0fc07b33995212f4cbbf06f4589f6364623ed7bbf1435a0f2"
+      }
+    },
+    {
+      "key": "feat144",
+      "value": {
+        "producerFeature": "FEAT-144",
+        "status": "completed",
+        "role": "observed WebClient proof handshake with limitation wording",
+        "referenceHash": "6dfea47eb4220d7d2fa62a5e6215ed8dd8fc969ce02ff664d25f8593e32e27fc"
+      }
+    },
+    {
+      "key": "feat154",
+      "value": {
+        "producerFeature": "FEAT-154",
+        "status": "completed",
+        "role": "production-like operational context",
+        "referenceHash": "6cfa9292164492a9993fa44e2a9e0ed0c84b5e6fa09e1f92a54fe0ce88aef482"
+      }
+    },
+    {
+      "key": "feat156",
+      "value": {
+        "producerFeature": "FEAT-156",
+        "status": "completed",
+        "role": "readiness promotion register owner",
+        "referenceHash": "b818e4146d2872d9bafa796a780dcaedaa60c056241cae2b5737d8818def17d1"
+      }
+    },
+    {
+      "key": "feat161",
+      "value": {
+        "producerFeature": "FEAT-161",
+        "status": "completed",
+        "role": "custody impact rehearsal handoff",
+        "referenceHash": "4c71eaa1236f9d770be22331e6302cb951be7232cf19ad7a5ddb111a90aa59e9"
+      }
+    }
+  ],
+  "validationSummary": {
+    "status": "pass",
+    "scenarioCount": 10,
+    "requiredScenarioCount": 10,
+    "passedRequiredScenarioCount": 10,
+    "degradedScenarioCount": 1,
+    "restrictedOnlyScenarioCount": 1,
+    "summaryRefs": [
+      "validation/second-ceremony-summary.json",
+      "validation/rollback-binding-summary.json",
+      "validation/emergency-change-summary.json",
+      "validation/webclient-observed-proof-summary.json"
+    ]
+  },
+  "secondCeremony": {
+    "ceremonyId": "DPC-REHEARSAL-20260602-002",
+    "publicPath": "ceremonies/DPC-REHEARSAL-20260602-002",
+    "manifestRef": "ceremonies/DPC-REHEARSAL-20260602-002/deployment-ceremony-manifest.json",
+    "artifactCount": 5,
+    "packageKind": "deployment_rollback_second_ceremony_public_safe_rehearsal"
+  },
+  "publicSafety": {
+    "status": "pass",
+    "unexpectedFindingCount": 0,
+    "scanResultRef": "validation/no-secret-scan-result.json"
+  },
+  "readinessProposal": {
+    "status": "proposed",
+    "scoreProposalRef": "readiness/deployment-rollback-score-proposal.json",
+    "readinessFragmentRef": "readiness/deployment-rollback-readiness-fragment.json",
+    "doesNotMutateRegister": true
+  },
+  "entries": [
+    {
+      "path": "README.md",
+      "sha256Hash": "sha256:c309ae587080f531047c7458b8d6b5a97a399fd54652068c2548395dd38132d9",
+      "mediaType": "text/markdown",
+      "visibility": "public"
+    },
+    {
+      "path": "validation/second-ceremony-summary.json",
+      "sha256Hash": "sha256:d3c84793c523f364d694abeecfd3a4a60481d87ba276e23be0c084c61f20549e",
+      "mediaType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "path": "validation/rollback-binding-summary.json",
+      "sha256Hash": "sha256:e9a6af6fe5cc6378ba597c9d82dc1be3ce39bab3f9d3e2daacf6d82b23c5d93d",
+      "mediaType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "path": "validation/emergency-change-summary.json",
+      "sha256Hash": "sha256:63bc8b36a4ffe149b582c4d9c0e4d606397089130bef161efb7ff470fcd902fe",
+      "mediaType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "path": "validation/webclient-observed-proof-summary.json",
+      "sha256Hash": "sha256:41c3730cb07354dc0d58f60d2c833b015313d88b7e4dc543f5c3d39ed70778dd",
+      "mediaType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "path": "validation/no-secret-scan-result.json",
+      "sha256Hash": "sha256:e3a7bff88046deaf1f1fc5ea503692907a59920e7479f7f15d405bf48b6ba15b",
+      "mediaType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "path": "readiness/deployment-rollback-readiness-fragment.json",
+      "sha256Hash": "sha256:060f2121ae767df9738dfdd2750ef5c7025ee8b75162a3082aee0674e3347011",
+      "mediaType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "path": "readiness/deployment-rollback-score-proposal.json",
+      "sha256Hash": "sha256:d3bed4003d709ecfd9005bdbd08ffc3924c43b3f42adf261e05989fe7ab7fad0",
+      "mediaType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "path": "handoff/deployment-rollback-downstream-handoff.json",
+      "sha256Hash": "sha256:c1d77520aebbe250cefcad0add6edfffaaa0eee341c01a5f47481f052bef6bc5",
+      "mediaType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "path": "handoff/reviewer-guide.md",
+      "sha256Hash": "sha256:31d6b4574dc0a7fe2b195be812365484436764fe0075b0df2c9f29ea972dbae4",
+      "mediaType": "text/markdown",
+      "visibility": "public"
+    },
+    {
+      "path": "restricted/restricted-evidence-index.schema-note.md",
+      "sha256Hash": "sha256:6a9fc592908d1e601910558e7fe1daecf2e19433780ee976eeb5510fcada0498",
+      "mediaType": "text/markdown",
+      "visibility": "restricted_ref_only"
+    }
+  ],
+  "secondCeremonyEntries": [
+    {
+      "path": "ceremonies/DPC-REHEARSAL-20260602-002/deployment-ceremony-manifest.json",
+      "sha256Hash": "sha256:2911987fa8551fa14d6e59cee158c35f753e3b93fdf1da767ab125d8d17ef755",
+      "mediaType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "path": "ceremonies/DPC-REHEARSAL-20260602-002/deployment-ceremony.json",
+      "sha256Hash": "sha256:af34b62423f59ac579110a859c29c8b4707602ff44f7e51483a3344b5dc404a7",
+      "mediaType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "path": "ceremonies/DPC-REHEARSAL-20260602-002/readiness-fragment.json",
+      "sha256Hash": "sha256:87de81cbd1801285c4461498410d11342ac70e88f4ffac7ad8938264b134018b",
+      "mediaType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "path": "ceremonies/DPC-REHEARSAL-20260602-002/downstream-handoff.json",
+      "sha256Hash": "sha256:a440cde5a1db25a8fdf616f1b19485a3d6e426e3fe1afc4c933107f29172c2ba",
+      "mediaType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "path": "ceremonies/DPC-REHEARSAL-20260602-002/public-safe-binding-summary.md",
+      "sha256Hash": "sha256:86af3f2881a965493916f6b11916dd4ba05c5514b69f90db33417f595726e4c1",
+      "mediaType": "text/markdown",
+      "visibility": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "deployment-rollback-score-proposal.v1",
+  "generatedAt": "2026-06-02T00:00:00Z",
+  "producerFeature": "FEAT-162",
+  "dimensionId": "RDY-DIM-006",
+  "fromScore": 8,
+  "toScore": 9,
+  "targetBlockerId": "RDY-BLOCK-INTERNAL_AUDIT_95_DIM006-001",
+  "proposalOnly": true,
+  "directRegisterMutation": false,
+  "blockedUnlessAllCasesPass": true,
+  "nonClaims": [
+    "production_rollout",
+    "public_state_election_readiness",
+    "certification",
+    "independent_audit_acceptance",
+    "score_10",
+    "all_voters_same_browser_bundle"
+  ]
+}

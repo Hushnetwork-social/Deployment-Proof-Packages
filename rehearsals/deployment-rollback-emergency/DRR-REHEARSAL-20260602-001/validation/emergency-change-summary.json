@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "deployment-rollback-emergency-change-summary.v1",
+  "generatedAt": "2026-06-02T00:00:00Z",
+  "status": "pass",
+  "evidenceMode": "deterministic_rehearsal_fixture",
+  "scenarioCount": 3,
+  "cases": [
+    {
+      "scenarioId": "DEPLOY-ROLLBACK-EMERGENCY-OPEN-ELECTION",
+      "category": "emergency_change",
+      "expectedResult": "pass",
+      "safeResultCodes": [
+        "emergency_change_rerun_checks_passed"
+      ],
+      "readinessImpact": "supports_score_proposal",
+      "gateIds": [
+        "AT-RDY-005",
+        "AT-RDY-017"
+      ],
+      "proofRefs": [
+        "FEAT-143-runtime-deployment-proof-binding-ledger-v1"
+      ],
+      "restrictedEvidenceRefs": [
+        {
+          "refId": "RESTRICTED-EMERGENCY-CHANGE-EVIDENCE",
+          "visibility": "restricted_reviewer",
+          "hash": "4444444444444444444444444444444444444444444444444444444444444444",
+          "payloadPublished": false
+        }
+      ],
+      "requiredForScore": true
+    },
+    {
+      "scenarioId": "DEPLOY-ROLLBACK-CUSTODY-IMPACT-CHECK",
+      "category": "custody_impact",
+      "expectedResult": "pass",
+      "safeResultCodes": [
+        "custody_impact_handoff_current"
+      ],
+      "readinessImpact": "supports_score_proposal",
+      "gateIds": [
+        "AT-RDY-002",
+        "AT-RDY-005"
+      ],
+      "proofRefs": [
+        "kms-custody-rehearsal/v0.1.0"
+      ],
+      "restrictedEvidenceRefs": [
+        {
+          "refId": "RESTRICTED-CUSTODY-IMPACT-HANDOFF",
+          "visibility": "restricted_reviewer",
+          "hash": "5555555555555555555555555555555555555555555555555555555555555555",
+          "payloadPublished": false
+        }
+      ],
+      "requiredForScore": true
+    },
+    {
+      "scenarioId": "DEPLOY-ROLLBACK-RESTRICTED-BOUNDARY",
+      "category": "restricted_boundary",
+      "expectedResult": "restricted_only",
+      "safeResultCodes": [
+        "restricted_boundary_preserved"
+      ],
+      "readinessImpact": "preserves_private_boundary",
+      "gateIds": [
+        "AT-RDY-005"
+      ],
+      "proofRefs": [],
+      "restrictedEvidenceRefs": [
+        {
+          "refId": "RESTRICTED-BOUNDARY-INDEX",
+          "visibility": "restricted_reviewer",
+          "hash": "6666666666666666666666666666666666666666666666666666666666666666",
+          "payloadPublished": false
+        }
+      ],
+      "requiredForScore": true
+    }
+  ]
+}

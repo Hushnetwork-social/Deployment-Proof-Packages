@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "deployment-rollback-binding-summary.v1",
+  "generatedAt": "2026-06-02T00:00:00Z",
+  "status": "pass",
+  "evidenceMode": "deterministic_rehearsal_fixture",
+  "scenarioCount": 1,
+  "cases": [
+    {
+      "scenarioId": "DEPLOY-ROLLBACK-TO-LAST-ACCEPTED",
+      "category": "rollback",
+      "expectedResult": "pass",
+      "safeResultCodes": [
+        "rollback_to_accepted_artifact_set_verified"
+      ],
+      "readinessImpact": "supports_score_proposal",
+      "gateIds": [
+        "AT-RDY-005",
+        "AT-RDY-017"
+      ],
+      "proofRefs": [
+        "DPC-REHEARSAL-20260519-001",
+        "DPC-REHEARSAL-20260602-002"
+      ],
+      "restrictedEvidenceRefs": [
+        {
+          "refId": "RESTRICTED-ROLLBACK-BINDING-EVIDENCE",
+          "visibility": "restricted_reviewer",
+          "hash": "3333333333333333333333333333333333333333333333333333333333333333",
+          "payloadPublished": false
+        }
+      ],
+      "requiredForScore": true
+    }
+  ]
+}

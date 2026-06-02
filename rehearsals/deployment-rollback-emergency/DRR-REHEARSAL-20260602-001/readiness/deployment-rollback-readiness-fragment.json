@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "deployment-rollback-readiness-fragment.v1",
+  "generatedAt": "2026-06-02T00:00:00Z",
+  "producerFeature": "FEAT-162",
+  "dimensionId": "RDY-DIM-006",
+  "status": "candidate",
+  "targetBlockerId": "RDY-BLOCK-INTERNAL_AUDIT_95_DIM006-001",
+  "scoreEffect": {
+    "proposedScoreFrom": 8,
+    "proposedScoreTo": 9,
+    "scoreChangeAllowed": false,
+    "doesNotMutateRegister": true,
+    "requiresLaterInternalAudit95PromotionPass": true
+  },
+  "evidenceRefs": [
+    "README.md",
+    "deployment-rollback-rehearsal-manifest.json",
+    "validation/second-ceremony-summary.json",
+    "validation/rollback-binding-summary.json",
+    "validation/emergency-change-summary.json",
+    "validation/webclient-observed-proof-summary.json",
+    "validation/no-secret-scan-result.json",
+    "readiness/deployment-rollback-score-proposal.json",
+    "handoff/deployment-rollback-downstream-handoff.json",
+    "handoff/reviewer-guide.md",
+    "restricted/restricted-evidence-index.schema-note.md"
+  ],
+  "nonClaims": [
+    "production_rollout",
+    "public_state_election_readiness",
+    "certification",
+    "independent_audit_acceptance",
+    "score_10",
+    "all_voters_same_browser_bundle"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "manifestId": "MANIFEST-DPC-REHEARSAL-20260602-002",
+  "packageId": "DPC-REHEARSAL-20260602-002",
+  "packageKind": "deployment_rollback_second_ceremony_public_safe_rehearsal",
+  "producerFeature": "FEAT-162",
+  "generatedAt": "2026-06-02T00:00:00Z",
+  "canonicalizationVersion": "deployment-rollback-rehearsal-canonical-json.v1",
+  "sourceId": "DEPLOYMENT-ROLLBACK-REHEARSAL-v0.1.0",
+  "validationResults": {
+    "status": "passed",
+    "sourceValidation": "passed",
+    "runtimeBindingMode": "consumes_FEAT_143_and_FEAT_144_refs"
+  },
+  "redactionScanResults": {
+    "publicForbiddenMaterialScan": "passed"
+  },
+  "files": [
+    {
+      "path": "ceremonies/DPC-REHEARSAL-20260602-002/deployment-ceremony.json",
+      "byteLength": 3240,
+      "sha256Hash": "af34b62423f59ac579110a859c29c8b4707602ff44f7e51483a3344b5dc404a7"
+    },
+    {
+      "path": "ceremonies/DPC-REHEARSAL-20260602-002/readiness-fragment.json",
+      "byteLength": 1485,
+      "sha256Hash": "87de81cbd1801285c4461498410d11342ac70e88f4ffac7ad8938264b134018b"
+    },
+    {
+      "path": "ceremonies/DPC-REHEARSAL-20260602-002/downstream-handoff.json",
+      "byteLength": 1086,
+      "sha256Hash": "a440cde5a1db25a8fdf616f1b19485a3d6e426e3fe1afc4c933107f29172c2ba"
+    },
+    {
+      "path": "ceremonies/DPC-REHEARSAL-20260602-002/public-safe-binding-summary.md",
+      "byteLength": 560,
+      "sha256Hash": "86af3f2881a965493916f6b11916dd4ba05c5514b69f90db33417f595726e4c1"
+    }
+  ]
+}

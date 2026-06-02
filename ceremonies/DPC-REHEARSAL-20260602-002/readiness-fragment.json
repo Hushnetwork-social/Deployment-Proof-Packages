@@ -1,0 +1,40 @@
+{
+  "fragmentId": "RDY-FRAG-INTERNAL-AUDIT-95-FEAT-162-001",
+  "generatedAt": "2026-06-02T00:00:00Z",
+  "featureSlice": "FEAT-162",
+  "acceptanceGate": "AT-RDY-017",
+  "sourceGap": "Trusted deployment ceremony",
+  "claimEffect": "Supports proposal-only internal audit 95 readiness movement when all FEAT-162 rehearsal gates pass.",
+  "dimensionScoreChange": {
+    "dimensionId": "RDY-DIM-006",
+    "previousScore": 8,
+    "proposedScore": 9,
+    "generatedDiff": "RDY-DIM-006 8 -\u003E 9",
+    "directRegisterMutation": false
+  },
+  "blockerChanges": [
+    {
+      "blockerId": "RDY-BLOCK-INTERNAL_AUDIT_95_DIM006-001",
+      "previousStatus": "red",
+      "proposedStatus": "green",
+      "reason": "Second ceremony, rollback, emergency-change, runtime binding, and public-safety rehearsal evidence passed."
+    }
+  ],
+  "evidenceRefs": [
+    "DPC-REHEARSAL-20260602-002",
+    "rehearsals/deployment-rollback-emergency/DRR-REHEARSAL-20260602-001",
+    "validation/second-ceremony-summary.json",
+    "validation/rollback-binding-summary.json",
+    "validation/emergency-change-summary.json",
+    "validation/webclient-observed-proof-summary.json"
+  ],
+  "residualRisk": "Proposal-only until readiness promotion owner applies the score movement.",
+  "nonClaims": [
+    "production_rollout",
+    "public_state_election_readiness",
+    "certification",
+    "independent_audit_acceptance",
+    "score_10",
+    "all_voters_same_browser_bundle"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "deployment-rollback-second-ceremony-summary.v1",
+  "generatedAt": "2026-06-02T00:00:00Z",
+  "status": "pass",
+  "evidenceMode": "deterministic_rehearsal_fixture",
+  "scenarioCount": 5,
+  "cases": [
+    {
+      "scenarioId": "DEPLOY-ROLLBACK-ACCEPTED-FEAT132-BASELINE",
+      "category": "accepted_baseline",
+      "expectedResult": "pass",
+      "safeResultCodes": [
+        "accepted_feat132_baseline_verified"
+      ],
+      "readinessImpact": "supports_score_proposal",
+      "gateIds": [
+        "AT-RDY-005"
+      ],
+      "proofRefs": [
+        "DPC-REHEARSAL-20260519-001",
+        "DPS-REHEARSAL-20260519-001"
+      ],
+      "restrictedEvidenceRefs": [
+        {
+          "refId": "RESTRICTED-FEAT132-DEPLOYMENT-HANDOFF",
+          "visibility": "restricted_reviewer",
+          "hash": "98529aa18670372511f28750515e2837e6384403e1e03e690f64ae527b1272a6",
+          "payloadPublished": false
+        }
+      ],
+      "requiredForScore": true
+    },
+    {
+      "scenarioId": "DEPLOY-ROLLBACK-SECOND-CEREMONY",
+      "category": "second_ceremony",
+      "expectedResult": "pass",
+      "safeResultCodes": [
+        "second_ceremony_hash_bound"
+      ],
+      "readinessImpact": "supports_score_proposal",
+      "gateIds": [
+        "AT-RDY-005",
+        "AT-RDY-017",
+        "AT-RDY-018"
+      ],
+      "proofRefs": [
+        "DPC-REHEARSAL-20260602-002",
+        "DPP-WEB-20260602-002",
+        "DPP-SERVER-20260602-002"
+      ],
+      "restrictedEvidenceRefs": [
+        {
+          "refId": "RESTRICTED-SECOND-CEREMONY-EVIDENCE",
+          "visibility": "restricted_reviewer",
+          "hash": "1111111111111111111111111111111111111111111111111111111111111111",
+          "payloadPublished": false
+        }
+      ],
+      "requiredForScore": true
+    },
+    {
+      "scenarioId": "DEPLOY-ROLLBACK-NO-CHANGE-FREEZE",
+      "category": "no_change",
+      "expectedResult": "pass",
+      "safeResultCodes": [
+        "no_change_freeze_verified"
+      ],
+      "readinessImpact": "supports_score_proposal",
+      "gateIds": [
+        "AT-RDY-005"
+      ],
+      "proofRefs": [
+        "DPC-REHEARSAL-20260602-002"
+      ],
+      "restrictedEvidenceRefs": [],
+      "requiredForScore": true
+    },
+    {
+      "scenarioId": "DEPLOY-ROLLBACK-NON-VOTING-CHANGE",
+      "category": "non_voting_change",
+      "expectedResult": "pass",
+      "safeResultCodes": [
+        "non_voting_change_classified"
+      ],
+      "readinessImpact": "supports_score_proposal",
+      "gateIds": [
+        "AT-RDY-005"
+      ],
+      "proofRefs": [
+        "DPC-REHEARSAL-20260602-002"
+      ],
+      "restrictedEvidenceRefs": [],
+      "requiredForScore": true
+    },
+    {
+      "scenarioId": "DEPLOY-ROLLBACK-OPERATIONAL-CONFIG-CHANGE",
+      "category": "operational_config_change",
+      "expectedResult": "pass",
+      "safeResultCodes": [
+        "operational_config_rerun_checks_passed"
+      ],
+      "readinessImpact": "supports_score_proposal",
+      "gateIds": [
+        "AT-RDY-005",
+        "AT-RDY-017"
+      ],
+      "proofRefs": [
+        "FEAT-143-runtime-deployment-proof-binding-ledger-v1"
+      ],
+      "restrictedEvidenceRefs": [
+        {
+          "refId": "RESTRICTED-OPERATIONAL-CONFIG-CHANGE",
+          "visibility": "restricted_reviewer",
+          "hash": "2222222222222222222222222222222222222222222222222222222222222222",
+          "payloadPublished": false
+        }
+      ],
+      "requiredForScore": true
+    }
+  ]
+}

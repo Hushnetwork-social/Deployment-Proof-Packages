@@ -1,0 +1,110 @@
+{
+  "ceremonyId": "DPC-REHEARSAL-20260602-002",
+  "ceremonyVersion": "1.0",
+  "producerFeature": "FEAT-162",
+  "generatedAt": "2026-06-02T00:00:00Z",
+  "status": "accepted",
+  "claimLevel": "internal_non_binding_rehearsal",
+  "sourceId": "DEPLOYMENT-ROLLBACK-REHEARSAL-v0.1.0",
+  "publicDeploymentProofRepository": "https://github.com/Hushnetwork-social/Deployment-Proof-Packages",
+  "componentDeploymentProofs": {
+    "hushWebClientDeploymentProofId": "DPP-WEB-20260602-002",
+    "hushServerNodeDeploymentProofId": "DPP-SERVER-20260602-002"
+  },
+  "deploymentProofSet": {
+    "proofSetId": "DPS-REHEARSAL-20260602-002",
+    "bindingLedgerId": "FEAT-143-runtime-deployment-proof-binding-ledger-v1"
+  },
+  "ceremonyStages": [
+    {
+      "stageId": "prepare",
+      "stageStatus": "passed",
+      "blocksAcceptance": true
+    },
+    {
+      "stageId": "freeze",
+      "stageStatus": "passed",
+      "blocksAcceptance": true
+    },
+    {
+      "stageId": "deploy_verify",
+      "stageStatus": "passed",
+      "blocksAcceptance": true
+    },
+    {
+      "stageId": "pre_open",
+      "stageStatus": "passed",
+      "blocksAcceptance": true
+    },
+    {
+      "stageId": "rollback_rehearsal",
+      "stageStatus": "passed",
+      "blocksAcceptance": true
+    },
+    {
+      "stageId": "emergency_change_rehearsal",
+      "stageStatus": "passed",
+      "blocksAcceptance": true
+    }
+  ],
+  "scenarioRefs": [
+    {
+      "scenarioId": "DEPLOY-ROLLBACK-SECOND-CEREMONY",
+      "expectedResult": "pass",
+      "safeResultCodes": [
+        "second_ceremony_hash_bound"
+      ],
+      "readinessImpact": "supports_score_proposal"
+    },
+    {
+      "scenarioId": "DEPLOY-ROLLBACK-NO-CHANGE-FREEZE",
+      "expectedResult": "pass",
+      "safeResultCodes": [
+        "no_change_freeze_verified"
+      ],
+      "readinessImpact": "supports_score_proposal"
+    },
+    {
+      "scenarioId": "DEPLOY-ROLLBACK-NON-VOTING-CHANGE",
+      "expectedResult": "pass",
+      "safeResultCodes": [
+        "non_voting_change_classified"
+      ],
+      "readinessImpact": "supports_score_proposal"
+    },
+    {
+      "scenarioId": "DEPLOY-ROLLBACK-OPERATIONAL-CONFIG-CHANGE",
+      "expectedResult": "pass",
+      "safeResultCodes": [
+        "operational_config_rerun_checks_passed"
+      ],
+      "readinessImpact": "supports_score_proposal"
+    }
+  ],
+  "runtimeBindingRefs": [
+    "FEAT-143-runtime-deployment-proof-binding-ledger-v1"
+  ],
+  "webClientObservedProofRefs": [
+    "FEAT-144-observed-webclient-proof-handshake"
+  ],
+  "readinessFragment": {
+    "fragmentId": "RDY-FRAG-INTERNAL-AUDIT-95-FEAT-162-001",
+    "path": "ceremonies/DPC-REHEARSAL-20260602-002/readiness-fragment.json"
+  },
+  "restrictedEvidenceRefs": [
+    {
+      "refId": "RESTRICTED-SECOND-CEREMONY-EVIDENCE",
+      "visibility": "restricted_reviewer",
+      "hash": "1111111111111111111111111111111111111111111111111111111111111111",
+      "payloadPublished": false
+    }
+  ],
+  "nonClaims": [
+    "production_rollout",
+    "public_state_election_readiness",
+    "certification",
+    "independent_audit_acceptance",
+    "score_10",
+    "all_voters_same_browser_bundle"
+  ]
+}

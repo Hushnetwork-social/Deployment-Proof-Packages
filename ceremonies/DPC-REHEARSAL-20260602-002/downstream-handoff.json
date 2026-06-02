@@ -1,0 +1,35 @@
+{
+  "handoffId": "DPC-HANDOFF-FEAT-162-20260602-001",
+  "generatedAt": "2026-06-02T00:00:00Z",
+  "sourceFeature": "FEAT-162",
+  "ceremonyId": "DPC-REHEARSAL-20260602-002",
+  "publicRefs": [
+    "ceremonies/DPC-REHEARSAL-20260602-002/",
+    "rehearsals/deployment-rollback-emergency/DRR-REHEARSAL-20260602-001/"
+  ],
+  "consumers": [
+    {
+      "consumerId": "FEAT-163",
+      "role": "second production-like run consumes deployment rollback context"
+    },
+    {
+      "consumerId": "FEAT-166",
+      "role": "governance handoff audit pack consumes reviewer evidence"
+    }
+  ],
+  "readinessRegisterHandoff": {
+    "consumerFeature": "FEAT-156",
+    "dimensionId": "RDY-DIM-006",
+    "proposedScoreFrom": 8,
+    "proposedScoreTo": 9,
+    "directRegisterMutation": false
+  },
+  "runtimeVisibilityContract": {
+    "implementedInFeat162": false,
+    "runtimeBindingClassification": "uses_existing_FEAT_143_and_FEAT_144_refs",
+    "followUpNeeded": false
+  },
+  "restrictedEvidenceRefs": [
+    "restricted/restricted-evidence-index.schema-note.md"
+  ]
+}
